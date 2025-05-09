@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deposit Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(45deg, #ff8c00, #ff4c00);
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        h1 {
+            color: #4CAF50;
+            font-size: 32px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+        .payment-methods {
+            margin-bottom: 30px;
+        }
+        .payment-methods div {
+            background-color: #f1f1f1;
+            border: 1px solid #ddd;
+            margin: 15px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .payment-methods h3 {
+            color: #ff4c00;
+            font-size: 22px;
+        }
+        .payment-methods p {
+            font-size: 18px;
+            color: #333;
+        }
+        .trx-form {
+            margin-top: 20px;
+        }
+        .trx-form input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        .trx-form button {
+            width: 100%;
+            padding: 12px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .trx-form button:hover {
+            background-color: #45a049;
+        }
+        .footer {
+            font-size: 14px;
+            color: #888;
+            margin-top: 30px;
+        }
+        .footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Deposit Information</h1>
+
+    <div class="payment-methods">
+        <div>
+            <h3>Nagad</h3>
+            <p><strong>Number:</strong> 01756547174</p>
+        </div>
+        <div>
+            <h3>bKash</h3>
+            <p><strong>Number:</strong> 01725469177</p>
+        </div>
+    </div>
+
+    <div class="trx-form">
+        <h3>Please Enter Your TRX Code After Payment</h3>
+        <form action="#" method="post">
+            <input type="text" id="trx-code" name="trx-code" placeholder="Enter your TRX Code" required>
+            <button type="submit">Submit TRX Code</button>
+        </form>
+    </div>
+
+    <p class="footer">Please ensure to send the deposit amount to the correct number. After making the payment, submit your TRX code for confirmation. <br> <a href="#">Contact Support</a></p>
+</div>
+
+</body>
+</html>
